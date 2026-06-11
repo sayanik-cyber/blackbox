@@ -321,7 +321,7 @@ JSON.stringify(messages)
     try{
 
         const response = await fetch(
-"http://localhost:3000/chat",
+"https://blackbox-0nwu.onrender.com/chat",
 {
             method: "POST",
 
