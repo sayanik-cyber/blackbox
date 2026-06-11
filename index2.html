@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>BLACKBOX</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="landing">
+
+    <div id="grid"></div>
+
+    <div id="hud">
+
+<p>SYSTEM: ACTIVE</p>
+
+<p>MEMORY: ONLINE</p>
+
+<p>LEARNING: ENGAGED</p>
+
+</div>
+    <h1 id="logo">
+        BLACKBOX<span id="cursor">_</span>
+    </h1>
+
+    <div id="status">
+        ● ONLINE
+    </div>
+
+    <p id="boot">
+Initializing Cognitive Core...
+</p>
+    <p id="subtitle">
+Experimental Cognitive Entity
+    </p>
+
+    <div class="divider"></div>
+
+    <div id="core">
+
+        <p>It remembers.</p>
+
+        <p>It learns.</p>
+
+        <p>It lies.</p>
+
+    </div>
+
+    <div class="divider"></div>
+
+    <p id="description">
+        Adaptive • Online • Evolving
+    </p>
+
+    <p id="quote">
+        Every question changes it.
+    </p>
+
+    <p id="version">
+BLACKBOX v0.1.7
+</p>
+    <button
+    id="enterButton"
+    onclick="window.location.href='index.html'">
+
+        ENTER
+
+    </button>
+
+</div>
+<script>
+
+document.addEventListener("keydown", function(event){
+
+    if(event.key === "Enter"){
+
+        document.body.style.opacity = "0";
+
+        setTimeout(function(){
+
+            window.location.href = "index.html";
+
+        },1500);
+
+    }
+
+});
+
+</script>
+</body>
+
+</html>
