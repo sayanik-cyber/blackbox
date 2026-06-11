@@ -1,65 +1,98 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-<link rel="stylesheet" href="chat.css">
-    <title>BLACKBOX</title>
+
+<title>BLACKBOX</title>
+
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<div id="bootScreen">
+<div id="landing">
 
-> INITIALIZING BLACKBOX...
+    <div id="grid"></div>
 
-<br><br>
+    <div id="hud">
 
-> LOADING COGNITIVE CORE...
+<p>SYSTEM: ACTIVE</p>
 
-<br><br>
+<p>MEMORY: ONLINE</p>
 
-> MEMORY ONLINE
-
-<br><br>
-
-> READY
+<p>LEARNING: ENGAGED</p>
 
 </div>
+    <h1 id="logo">
+        BLACKBOX<span id="cursor">_</span>
+    </h1>
 
-    <div id="chatContainer">
+    <div id="status">
+        ● ONLINE
+    </div>
 
-    <div id="header">
+    <p id="boot">
+Initializing Cognitive Core...
+</p>
+    <p id="subtitle">
+Experimental Cognitive Entity
+    </p>
 
-        <h1>BLACKBOX</h1>
+    <div class="divider"></div>
 
-        <div id="status">
-            ● ONLINE
-        </div>
+    <div id="core">
+
+        <p>It remembers.</p>
+
+        <p>It learns.</p>
+
+        <p>It lies.</p>
 
     </div>
 
-    <div id="chatWindow">
+    <div class="divider"></div>
+
+    <p id="description">
+        Adaptive • Online • Evolving
+    </p>
+
+    <p id="quote">
+        Every question changes it.
+    </p>
+
+    <p id="version">
+BLACKBOX v0.1.7
+</p>
+    <button
+    id="enterButton"
+    onclick="window.location.href='index.html'">
+
+        ENTER
+
+    </button>
 
 </div>
+<script>
 
-    <div id="inputArea">
+document.addEventListener("keydown", function(event){
 
-        <input
-        id="userInput"
-        placeholder="Ask BLACKBOX...">
+    if(event.key === "Enter"){
 
-        <button onclick="askBLACKBOX()">
+        document.body.style.opacity = "0";
 
-            SEND
+        setTimeout(function(){
 
-        </button>
+            window.location.href = "index.html";
 
-    </div>
+        },1500);
 
-</div>
+    }
 
-<script src="config.js"></script>
-<script src="script.js"></script>
+});
 
+</script>
 </body>
+
+</html>
